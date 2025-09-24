@@ -1,0 +1,33 @@
+from dataclasses import dataclass
+
+@dataclass
+class agendamento:
+    barbeiro: str
+    cliente: str
+    corte: str
+    data_hora: str
+    
+lista_agendamento = []
+
+def criar_agendamento():
+    print("\n=== FAZER AGENDAMENTO ===")
+    barbeiro = input("Digite o nome do barbeiro")
+    cliente = input("Digite seu nome")
+    corte = input("Escolha de corte")
+    data = input("Escolha uma data")
+    hora = input("Escolha seu horario")
+    
+def cliente():
+    nome = input("Digite seu nome")
+    telefone = input("Digite seu numero")
+    email = input("Digite seu email")
+    novo_cliente = cliente(nome, telefone, email)
+    lista_cliente.append(novo_cliente)
+    print("cliente registrado com sucesso")
+    
+def corte():
+    print("1- Corte Social - 30 Reais")
+    print("2- Corte simples - 25 Reais")
+    print("3- Corte + Barba - 35 Reais")
+    print("4- Barba completa - 20 Reais")
+    opcao = input("Escolha Seu Corte")
